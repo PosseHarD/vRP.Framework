@@ -1,0 +1,3 @@
+vehs = {}
+
+vehs.vehglobal = {}
