@@ -91,6 +91,15 @@ CREATE TABLE `vrp_homes_permissions`  (
 ) ENGINE = InnoDB CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = DYNAMIC;
 -- Exportação de dados foi desmarcado.
 
+-- Copiando estrutura para tabela db.vrp_priority
+CREATE TABLE IF NOT EXISTS `vrp_priority` (
+  `passport` int(11) NOT NULL,
+  `steam` varchar(100) NOT NULL,
+  `priority` int(11) DEFAULT NULL,
+  `discord` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`passport`,`steam`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 CREATE TABLE `vrp_user_vehicles`  (
   `user_id` int NOT NULL,
   `vehicle` varchar(100) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL,

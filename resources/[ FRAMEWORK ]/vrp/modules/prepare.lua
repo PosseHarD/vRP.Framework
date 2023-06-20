@@ -19,6 +19,11 @@ vRP.prepare("vRP/get_banned_identifiers","SELECT identifier FROM vrp_users_banne
 vRP.prepare("vRP/rem_banned_identifiers","DELETE from vrp_users_banned WHERE user_id = @user_id")
 
 -----------------------------------------------------------------------------------------------------------------------------------------
+-- QUEUE.LUA
+-----------------------------------------------------------------------------------------------------------------------------------------
+vRP.prepare("vRP/get_priority","SELECT * FROM vrp_priority")
+
+-----------------------------------------------------------------------------------------------------------------------------------------
 -- IDENTITY.LUA
 -----------------------------------------------------------------------------------------------------------------------------------------
 vRP.prepare("vRP/get_user_identity","SELECT * FROM vrp_user_identities WHERE user_id = @user_id")

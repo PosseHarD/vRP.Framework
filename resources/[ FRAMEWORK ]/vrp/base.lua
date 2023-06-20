@@ -252,7 +252,7 @@ AddEventHandler("queue:playerConnecting",function(source,ids,name,setKickReason,
 						deferrals.done()
 					end
 				else
-					deferrals.done("Alto SP informa: [Adquira já seu visto em https://discord.io/hardev] - [ID: "..user_id.."]")
+					deferrals.done("HarD Network informa: [Adquira já seu visto em https://discord.io/hardev] - [ID: "..user_id.."]")
 					TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 				end
 			else
@@ -267,11 +267,6 @@ AddEventHandler("queue:playerConnecting",function(source,ids,name,setKickReason,
 		deferrals.done("Ocorreu um problema de identidade.")
 		TriggerEvent("queue:playerConnectingRemoveQueues",ids)
 	end
-end)
-
-AddEventHandler("playerDropped",function(reason)
-	local source = source
-	vRP.dropPlayer(source)
 end)
 
 RegisterServerEvent("vRPcli:playerSpawned")
